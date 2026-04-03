@@ -33,6 +33,8 @@ jobs:
         generator: go-gin-server
         input: api/ambulance-wl.openapi.yaml
         additional-properties: apiPath=internal/ambulance_wl,packageName=ambulance_wl,interfaceOnly=true
+        git-user-id: acidnyi
+        git-repo-id: ambulance-webapi
 
     - name: Update dependencies
       run: go mod tidy
