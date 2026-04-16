@@ -18,7 +18,7 @@ spec:
           claimName: mongo-pvc
       containers:
       - name: *PODNAME
-        image: mongo:latest
+        image: mongo:7.0
         imagePullPolicy: Always
         ports:
         - name: mongodb-port
